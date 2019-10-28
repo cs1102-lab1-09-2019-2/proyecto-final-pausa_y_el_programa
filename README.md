@@ -10,10 +10,10 @@ Integrantes - (Usuarios Github:):
 1.- <b>Sebastián André Peralta Ibañez</b><br>
     <i>SebastianPeralta</i>
 
-2.- <b>nombre_completo2</b><br>
+2.- <b>Franco Jesus Bolaños Gainsborg</b><br>
     <i>usuario_github2</i>
 
-3.- <b>nombre_completo3</b><br>
+3.- <b>Freddy Gabriel Dávila Canales</b><br>
     <i>usuario_github3</i>
 
 Instrucciones:
