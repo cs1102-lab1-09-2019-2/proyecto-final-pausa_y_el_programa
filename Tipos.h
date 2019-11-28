@@ -1,14 +1,19 @@
-
-#include <string>
 #include <iostream>
-#include <iomanip>
-#include<stdlib.h>
-#include<time.h>
+#include <fstream>
+#include <cstdlib>
+#include <bits/stdc++.h>
+
+#include <cmath>
+#include <string>
 #include <vector>
+#include <iomanip>
 using namespace std;
-typedef int TipoEntero;
-typedef char TipoCaracter;
-typedef char TipoImagen;
-typedef string TipoString;
-typedef double decimal;
-typedef vector<vector<char>> TipoMatriz;
+
+using TipoEntero = int;
+using TipoDecimal = double;
+using TipoChar = char;
+using TipoStr = string;
+typedef pair<int, int> Pair; 
+  
+// Creating a shortcut for pair<int, pair<int, int>> type 
+typedef pair<double, pair<int, int>> pPair; 
