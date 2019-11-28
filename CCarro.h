@@ -1,15 +1,21 @@
-#include "Tipos.h"
+ #include "Nodo.h"
 
-class CCarro{
-private:
-    TipoEntero posx;
-    TipoEntero posy;
-    TipoImagen Imagen;
-public:
-    CCarro(TipoEntero _posx, TipoEntero _posy);
-    virtual ~CCarro();
-    void setPosx(TipoEntero _Posx){posx=_Posx;}
-    void setPosy(TipoEntero _Posy){posy=_Posy;}
-    TipoEntero getPosx();
-    TipoEntero getPosy();
+class Carro{
+  private:
+  Coordenada Inicio;
+  Coordenada Final;
+  TipoEntero cantNodos;
+  vector<Nodo*> Nodos;
+  public:
+  Carro();
+  virtual ~Carro();
+  void inicializarNodos();
+  void adicionarNodo(Nodo* Nodo1);
+  void setInicio(TipoEntero _x, TipoEntero _y);
+  void setFinal(TipoEntero _x, TipoEntero _y);
+
+  TipoEntero getIniciox();
+  TipoEntero getInicioy();
+  TipoEntero getFinalx();
+  TipoEntero getFinaly();
 };
