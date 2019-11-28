@@ -1,16 +1,40 @@
-#include "CCarro.h"
+#include "Carro.h"
 
-CCarro::CCarro (TipoEntero _posx, TipoEntero _posy){
-    this->posx=_posx;
-    this->posy=_posy;
+Carro::Carro(){}
+Carro::~Carro(){}
+
+void Carro::inicializarNodos(){
+  cantNodos=0;
 }
 
-TipoEntero CCarro::getPosx(){
-  return this->posx;
+void Carro::adicionarNodo(Nodo* Nodo1) {
+    Nodos.emplace_back(Nodo1);
 }
 
-TipoEntero CCarro::getPosy(){
-  return this->posy;
+void Carro::setInicio(TipoEntero _x, TipoEntero _y){
+  Inicio.setx(_x);
+  Inicio.sety(_y);
 }
 
-CCarro::~CCarro(){};
+void Carro::setFinal(TipoEntero _x, TipoEntero _y){
+  Final.setx(_x);
+  Final.sety(_y);
+}
+
+TipoEntero Carro::getIniciox(){
+  return Inicio.getx();
+}
+
+TipoEntero Carro::getInicioy(){
+  return Inicio.gety();
+}
+
+TipoEntero Carro::getFinalx(){
+  return Final.getx();
+}
+
+TipoEntero Carro::getFinaly(){
+  return Final.gety();
+}
+
+
